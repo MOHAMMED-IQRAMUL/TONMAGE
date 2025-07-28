@@ -7,50 +7,50 @@ import { motion } from "framer-motion";
 
 const images = {
   desktop: [
-    "TONMAGE/images/desktop/Image1.jpg",
-    "TONMAGE/images/desktop/Image2.jpg",
-    "TONMAGE/images/desktop/Image3.jpg",
-    "TONMAGE/images/desktop/Image4.jpg",
-    "TONMAGE/images/desktop/Image5.jpg",
-    "TONMAGE/images/desktop/Image6.jpg",
-    "TONMAGE/images/desktop/Image7.jpg",
-    "TONMAGE/images/desktop/Image8.jpg",
-    "TONMAGE/images/desktop/Image9.jpg",
-    "TONMAGE/images/desktop/Image10.jpg",
-    "TONMAGE/images/desktop/Image11.jpg",
-    "TONMAGE/images/desktop/Image12.jpg",
-    "TONMAGE/images/desktop/Image13.jpg",
-    "TONMAGE/images/desktop/Image14.jpg"
+    "images/desktop/Image1.jpg",
+    "images/desktop/Image2.jpg",
+    "images/desktop/Image3.jpg",
+    "images/desktop/Image4.jpg",
+    "images/desktop/Image5.jpg",
+    "images/desktop/Image6.jpg",
+    "images/desktop/Image7.jpg",
+    "images/desktop/Image8.jpg",
+    "images/desktop/Image9.jpg",
+    "images/desktop/Image10.jpg",
+    "images/desktop/Image11.jpg",
+    "images/desktop/Image12.jpg",
+    "images/desktop/Image13.jpg",
+    "images/desktop/Image14.jpg"
   ],
   mobile: [
-    "TONMAGE/images/mobile/image1.jpg",
-    "TONMAGE/images/mobile/image2.jpg",
-    "TONMAGE/images/mobile/image3.jpg",
-    "TONMAGE/images/mobile/image4.jpg",
-    "TONMAGE/images/mobile/image5.jpg",
-    "TONMAGE/images/mobile/image6.jpg",
-    "TONMAGE/images/mobile/image7.jpg",
-    "TONMAGE/images/mobile/image8.jpg",
-    "TONMAGE/images/mobile/image9.jpg",
-    "TONMAGE/images/mobile/image10.jpg",
-    "TONMAGE/images/mobile/image11.jpg",
-    "TONMAGE/images/mobile/image12.jpg",
-    "TONMAGE/images/mobile/image13.jpg",
-    "TONMAGE/images/mobile/image14.jpg",
-    "TONMAGE/images/mobile/image15.jpg",
-    "TONMAGE/images/mobile/image16.jpg",
-    "TONMAGE/images/mobile/image17.jpg",
-    "TONMAGE/images/mobile/image18.jpg",
-    "TONMAGE/images/mobile/image19.jpg",
-    "TONMAGE/images/mobile/image20.jpg",
-    "TONMAGE/images/mobile/image21.jpg",
-    "TONMAGE/images/mobile/image22.jpg",
-    "TONMAGE/images/mobile/image23.jpg",
-    "TONMAGE/images/mobile/image24.jpg",
-    "TONMAGE/images/mobile/image25.jpg",
-    "TONMAGE/images/mobile/image26.jpg",
-    "TONMAGE/images/mobile/image27.jpg",
-    "TONMAGE/images/mobile/image28.jpg"
+    "images/mobile/image1.jpg",
+    "images/mobile/image2.jpg",
+    "images/mobile/image3.jpg",
+    "images/mobile/image4.jpg",
+    "images/mobile/image5.jpg",
+    "images/mobile/image6.jpg",
+    "images/mobile/image7.jpg",
+    "images/mobile/image8.jpg",
+    "images/mobile/image9.jpg",
+    "images/mobile/image10.jpg",
+    "images/mobile/image11.jpg",
+    "images/mobile/image12.jpg",
+    "images/mobile/image13.jpg",
+    "images/mobile/image14.jpg",
+    "images/mobile/image15.jpg",
+    "images/mobile/image16.jpg",
+    "images/mobile/image17.jpg",
+    "images/mobile/image18.jpg",
+    "images/mobile/image19.jpg",
+    "images/mobile/image20.jpg",
+    "images/mobile/image21.jpg",
+    "images/mobile/image22.jpg",
+    "images/mobile/image23.jpg",
+    "images/mobile/image24.jpg",
+    "images/mobile/image25.jpg",
+    "images/mobile/image26.jpg",
+    "images/mobile/image27.jpg",
+    "images/mobile/image28.jpg"
   ]
 };
 
@@ -219,7 +219,7 @@ export default function App() {
                 }}
               >
                 <motion.img
-                  src={img}
+                  src={`${import.meta.env.DEVELOPMENT_MODE=="RUN"?"":"/TONMAGE/"}${img}`}
                   alt={`Wallpaper ${idx + 1}`}
                   style={{
                     width: "100%",
