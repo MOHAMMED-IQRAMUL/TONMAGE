@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material"
-
+    
 const Navbar = () => {
     return (
         <Box className="border-4 border-black relative top-0 left-0 z-10 p-4">
@@ -29,4 +29,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;
